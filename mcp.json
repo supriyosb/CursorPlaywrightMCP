@@ -1,0 +1,45 @@
+{
+  "mcpServers": {
+    "playwright": {
+      "command": "npx",
+      "args": [
+        "@playwright/mcp@latest"
+      ]
+    },
+    "LeaveManager": {
+      "command": "C:\\Users\\SupriyoBiswas\\AppData\\Local\\Programs\\Python\\Python38\\Scripts\\uv.EXE",
+      "args": [
+        "run",
+        "--with",
+        "mcp[cli]",
+        "mcp",
+        "run",
+        "C:\\Users\\SupriyoBiswas\\Desktop\\Automation\\supriyo-mcp-server\\main.py"
+      ]
+    },
+    "StuffTracker": {
+      "command": "C:\\Users\\SupriyoBiswas\\AppData\\Local\\Programs\\Python\\Python38\\Scripts\\uv.EXE",
+      "args": [
+        "run",
+        "--with",
+        "mcp[cli]",
+        "mcp",
+        "run",
+        "C:\\Users\\SupriyoBiswas\\Desktop\\Automation\\stuff-tracker-mcp-server\\main.py"
+      ]
+    },
+    "postgresql": {
+        "command": "npx",
+        "args": [
+          "-y",
+          "@executeautomation/database-server",
+          "--postgresql",
+          "--host", "localhost",
+          "--database", "postgres",
+          "--user", "postgres",
+          "--password", "1234512345",
+      "--port", "5432"
+        ]
+      }
+  }
+}
